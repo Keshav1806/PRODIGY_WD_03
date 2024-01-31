@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(0, 255, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+}
+.mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 15vh);
+    grid-template-rows: repeat(3, 15vh);
+    width: 45vh;
+    position: relative;
+    text-align: center;
+}
+.in-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgba(0, 173, 164, 0.397);
+    font-size: 70px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.in-box:hover{
+    background-color: rgb(85, 238, 212)
+}
+.otherinfo{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otherinfo span{
+    margin-right: 40px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.otherinfo button{
+    padding: 10px 35px;
+    background-color: aqua;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.otherinfo button:hover{
+    transform: translateY(-7px);
+}
+.otherinfo button:active{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+h1{
+    margin-bottom:20px;
+    font-size: 50px;
+}
+
+.rbl{
+    border-left: none;
+}
+.rbr{
+    border-right: none;
+}
+.rbt{
+    border-top: none;
+}
+.rbb{
+    border-bottom: none;
+}
+#line{
+    width: 45vh;
+    height: 5px;
+    position: absolute;
+    background-color: gray;
+    transition: all 1s ;
+    display: none;
+}
+
+.line012{
+    transform: translate(0px, 49px) ;
+}
+.line345{
+    transform: translate(0px, 164px) ;
+}
+.line678{
+    transform: translate(0px, 277px);
+}
+.line036{
+    transform: translate(-114px, 165px) rotate(90deg);
+}
+.line147{
+    transform: translate(0px, 165px) rotate(90deg);
+}
+.line258{
+    transform: translate(114px, 165px) rotate(90deg);
+}
+.line048{
+    transform: translate(2px, 162px) rotate(45deg);
+}
+.line246{
+    transform: translate(-1px, 166px) rotate(-45deg);
+}
+
